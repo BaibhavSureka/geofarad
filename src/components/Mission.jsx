@@ -3,7 +3,7 @@ import about from '../assets/about.png';
 
 function Mission() {
     return (
-        <section className="my-8 px-4">
+        <section className=" mb-20 px-10">
           <h2 className="text-xl font-light">Mission & Vision</h2>
           <h3 className="text-red-500 text-3xl font-bold mt-2">
           Enhancing power quality <br />and energy efficiency
@@ -23,7 +23,7 @@ function Mission() {
               </div>
             </div>
             <div className="flex flex-col justify-start mt-8 lg:mt-0 lg:ml-8">
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-lg">
               Our mission is to provide high-quality capacitors at competitive prices, enhancing power quality and energy efficiency. Under the visionary 
 leadership of founder Vineet Gupta, we continue to innovate and contribute to the industry, earning recognition and trust worldwide
               </p>

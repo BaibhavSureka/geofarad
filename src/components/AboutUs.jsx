@@ -3,7 +3,7 @@ import about from '../assets/about.png';
 
 function AboutUs() {
   return (
-    <section className="my-8 px-4">
+    <section className="my-8 px-10">
       <h2 className="text-xl font-light">About Us</h2>
       <h3 className="text-red-500 text-3xl font-bold mt-2">
         We’re creating only <br />exceptional Quality Capacitors
@@ -23,7 +23,7 @@ function AboutUs() {
           </div>
         </div>
         <div className="flex flex-col justify-start mt-8 lg:mt-0 lg:ml-8">
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-lg">
             V.J. Capacitors Pvt Ltd, operating under the esteemed brand name GEOFARAD, specializes in manufacturing a diverse range of AC capacitors. Our advanced 
             production facility in Noida, Uttar Pradesh, features state-of-the-art, fully automated machinery, ensuring stringent quality control. With a team of 
             seasoned marketing professionals and engineers well-versed in the latest technology, we deliver top-notch products known for their reliability and 

@@ -5,17 +5,21 @@ import Nav from './components/Nav';
 import Carousel from './components/Carousel ';
 import AboutUs from './components/AboutUs';
 import './index.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      <Header />
+      
       <Nav />
       <main>
-        <Carousel />
+        <Carousel/>
+
         <AboutUs />
         <Mission></Mission>
       </main>
+      <Footer/>
+      <Header />
     </>
   );
 }
