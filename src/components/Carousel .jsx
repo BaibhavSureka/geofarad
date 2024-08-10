@@ -6,7 +6,6 @@ import cap1 from '../assets/cap1.png';
 import cap2 from '../assets/cap2.png';
 import cap3 from '../assets/cap3.png';
 import CarouselContent from './CarouselContent';
-import "./carouselcontent.css";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
