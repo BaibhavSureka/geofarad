@@ -1,42 +1,38 @@
 import React from 'react';
-import about from '../assets/about.png';
+import './AboutUs.css';
 
-function AboutUs() {
+const AboutUs = () => {
   return (
-    <section className="my-8 px-10">
-      <h2 className="text-xl font-light">About Us</h2>
-      <h3 className="text-red-500 text-3xl font-bold mt-2">
-        We’re creating only <br />exceptional Quality Capacitors
-      </h3>
-      <div className="mt-8 grid grid-cols-1 lg:grid-cols-[auto_1fr] items-start">
-        <div className="relative flex justify-center w-fit">
-          <img src={about} alt="About Us" className="h-48 sm:h-64 lg:h-80 object-cover max-w-full lg:max-w-lg" />
-          <div className="absolute -bottom-4 -right-4 sm:-right-6 lg:-right-12 transform translate-x-1 translate-y-1 sm:translate-x-2 sm:translate-y-2 bg-red-500 text-white p-2 sm:p-4 shadow-lg flex space-x-2 sm:space-x-4 max-w-xs">
-            <div className="text-center">
-              <p className="text-xs sm:text-base">People</p>
-              <p className="text-lg sm:text-2xl font-bold">45+</p>
-            </div>
-            <div className="text-center">
-              <p className="text-xs sm:text-base">Factories</p>
-              <p className="text-lg sm:text-2xl font-bold">2</p>
-            </div>
+    <>
+      <h2 className="about-section-title">About Us</h2>
+      <div className="about-section">
+        <div className="images-section">
+          <div className="image-row">
+            <img src="./assets/rectangle-2928-2.svg" alt="Image 1" className="image-1" />
+            <img src="./assets/rectangle-2818.svg" alt="Image 2" className="image-2" />
+          </div>
+          <div className="image-row">
+            <img src="./assets/rectangle-2819.svg" alt="Image 3" className="image-3" />
+            <img src="./assets/rectangle-2817.svg" alt="Image 4" className="image-4" />
           </div>
         </div>
-        <div className="flex flex-col justify-start mt-8 lg:mt-0 lg:ml-8">
-          <p className="text-gray-700 text-lg">
-            V.J. Capacitors Pvt Ltd, operating under the esteemed brand name GEOFARAD, specializes in manufacturing a diverse range of AC capacitors. Our advanced 
-            production facility in Noida, Uttar Pradesh, features state-of-the-art, fully automated machinery, ensuring stringent quality control. With a team of 
-            seasoned marketing professionals and engineers well-versed in the latest technology, we deliver top-notch products known for their reliability and 
-            efficiency.
+        <div className="text-section">
+          <h1 className="headline">We’re Creating Only Exceptional Quality Capacitors</h1>
+          <p className="description">
+            V.J. Capacitors Pvt Ltd, operating under the esteemed brand name GEOFARAD, specializes in manufacturing a diverse range of AC capacitors. Our advanced production facility in Noida, Uttar Pradesh, features state-of-the-art, fully automated machinery, ensuring stringent quality control. With a team of seasoned marketing professionals and engineers well-versed in the latest technology, we deliver top-notch products known for their reliability and efficiency.
           </p>
-          <p className="text-gray-500 text-sm mt-2 lg:mt-4">
-            <small className="text-red-500">read more</small>
-          </p>
+          <div className="founder-section">
+            <img src="./assets/ellipse-1166.svg" alt="Founder" className="founder-image" />
+            <div className="founder-text">
+              <h2>Vineet Gupta</h2>
+              <p>Founder</p>
+            </div>
+          </div>
+          <button className="read-more-button">Read More</button>
         </div>
       </div>
-    </section>
+    </>
   );
-}
+};
 
 export default AboutUs;
-
