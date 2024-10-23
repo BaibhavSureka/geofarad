@@ -29,44 +29,39 @@
     width: 40%;
 }
 
-.image-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
-.images-section img {
+.image-item {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.image-1 {
-    width: 295px;
-    height: 268px;
-    margin-right: 20px;
+.image-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    /* Make the first column larger */
+    gap: 10px;
 }
 
-.image-2 {
-    width: 273px;
-    height: 286px;
-}
-
-.image-3 {
-    width: 258px;
-    height: 313px;
-    margin-right: 20px;
-}
-
-.image-4 {
-    width: 318px;
-    height: 314px;
+.image-item:first-child {
+    grid-column: 1 / 2;
+    /* Span the first column */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .text-section {
     width: 50%;
-    padding: 20px;
+    padding-left: 30px;
     color: #191919;
-    margin-right: 30px;
 }
 
 .headline {
@@ -78,7 +73,8 @@
     letter-spacing: -0.68px;
 }
 
-.description {
+.description,
+.vision {
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -138,22 +134,16 @@
 
     .images-section {
         width: 100%;
+        margin-bottom: 20px;
     }
 
-    .image-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .images-section img {
-        width: 100%;
-        margin-bottom: 15px;
+    .image-grid {
+        grid-template-columns: 1fr;
     }
 
     .text-section {
         width: 100%;
-        margin-right: 0;
-        padding: 0;
+        padding-left: 0;
     }
 
     .headline {
@@ -162,7 +152,8 @@
         text-align: center;
     }
 
-    .description {
+    .description,
+    .vision {
         font-size: 14px;
         line-height: 24px;
         text-align: justify;
@@ -192,17 +183,11 @@
 
     .images-section {
         width: 100%;
-    }
-
-    .image-row {
-        flex-direction: row;
-        justify-content: space-evenly;
         margin-bottom: 20px;
     }
 
     .text-section {
         width: 100%;
-        padding: 0;
     }
 
     .headline {
@@ -210,7 +195,8 @@
         line-height: 40px;
     }
 
-    .description {
+    .description,
+    .vision {
         font-size: 15px;
         line-height: 28px;
     }
