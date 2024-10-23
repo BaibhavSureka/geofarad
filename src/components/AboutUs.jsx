@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AboutUs.css';
 
 const AboutUs = () => {
+  // State to manage visibility of the vision section
+  const [isVisionVisible, setIsVisionVisible] = useState(false);
+
+  // Function to toggle visibility
+  const toggleVision = () => {
+    setIsVisionVisible(!isVisionVisible);
+  };
+
   return (
     <>
       <h2 className="about-section-title">About Us</h2>
@@ -19,10 +27,15 @@ const AboutUs = () => {
           <p className="description">
             V.J. Capacitors Pvt Ltd, operating under the esteemed brand name GEOFARAD, specializes in manufacturing a diverse range of AC capacitors. Our advanced production facility in Noida, Uttar Pradesh, features state-of-the-art, fully automated machinery, ensuring stringent quality control. With a team of seasoned marketing professionals and engineers well-versed in the latest technology, we deliver top-notch products known for their reliability and efficiency.
           </p>
-          <p className="vision">
-            <strong>Vision :</strong><br />
-            Our vision is to be a global leader in capacitor technology, delivering innovative and sustainable solutions to set the standard in the industry through continuous improvement and a commitment to excellence.
-          </p>
+          
+          {/* Conditionally render the vision text */}
+          {isVisionVisible && (
+            <p className="vision">
+              <strong>Vision :</strong><br />
+              Our vision is to be a global leader in capacitor technology, delivering innovative and sustainable solutions to set the standard in the industry through continuous improvement and a commitment to excellence.
+            </p>
+          )}
+          
           <div className="founder-section">
             <img src="./assets/ellipse-1166.svg" alt="Founder" className="founder-image" />
             <div className="founder-text">
@@ -30,7 +43,11 @@ const AboutUs = () => {
               <p>Founder</p>
             </div>
           </div>
-          <button className="read-more-button">Read Less</button>
+          
+          {/* Button to toggle read more/less */}
+          <button className="read-more-button" onClick={toggleVision}>
+            {isVisionVisible ? 'Read Less' : 'Read More'}
+          </button>
         </div>
       </div>
     </>
