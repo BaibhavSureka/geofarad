@@ -9,6 +9,7 @@ import "./index.css";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
 import Infrastructure from "./components/Infrastructure";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
@@ -28,8 +29,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/infrastructure" element={<Infrastructure />} />
       </Routes>
+      <Newsletter />
       <Footer />
-      <Header />
     </>
   );
 }
