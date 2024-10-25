@@ -1,15 +1,19 @@
 import React from 'react';
 import './OurBrands.css';
+import new1 from "../assets/clients.png";
+import new2 from "../assets/india.png";
+import new3 from "../assets/brand1.png";
+import new4 from "../assets/brand2.png";
 
 const OurBrands = () => {
     return (
         <>
         <div className="info-section">
-                <img src="src\assets\clients.png" alt="Clients Icon" className="icon" />
+                <img src={new1} alt="Clients Icon" className="icon" />
             <div className="info-box">
                 <span className="text">1100+ Clients</span>
             </div>
-            <img src="src\assets\india.png" alt="Locations Icon" className=" india_img icon" />
+            <img src={new2} alt="Locations Icon" className=" india_img icon" />
             <div className="info-box">
                 
                 <span className="text">3 Locations</span>
@@ -24,7 +28,7 @@ const OurBrands = () => {
             <div className="brands-grid">
                 <div className="brand-wrapper">
                     <div className="brand-card">
-                        <img src="src/assets/brand1.png" alt="GE Geofarad" className="brand-logo" />
+                        <img src={new3} alt="GE Geofarad" className="brand-logo" />
                         <div className="brand-number">01</div>
                     </div>
                     <p className="brand-description">“Performance Unlimited”</p>
@@ -32,7 +36,7 @@ const OurBrands = () => {
                 
                 <div className="brand-wrapper">
                     <div className="brand-card">
-                        <img src="src/assets/brand2.png" alt="Marcon" className="brand-logo" />
+                        <img src={new4} alt="Marcon" className="brand-logo" />
                         <div className="brand-number">02</div>
                     </div>
                     <p className="brand-description">“Reliability Redefined”</p>

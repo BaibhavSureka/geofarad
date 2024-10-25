@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './AboutUs.css';
+import about_1 from "../assets/rectangle-2928-2.png";
+import about_2 from "../assets/rectangle-2818.png";
+import about_3 from "../assets/rectangle-2819.png";
+import about_4 from "../assets/rectangle-2817.png";
+import about_5 from "../assets/ellipse-1166.png";
 
 const AboutUs = () => {
-  // State to manage visibility of the vision section
   const [isVisionVisible, setIsVisionVisible] = useState(false);
 
-  // Function to toggle visibility
   const toggleVision = () => {
     setIsVisionVisible(!isVisionVisible);
   };
@@ -16,10 +19,10 @@ const AboutUs = () => {
       <div className="about-section">
         <div className="images-section">
           <div className="image-grid">
-            <img src="src\assets\rectangle-2928-2.png" alt="Image 1" className="image-item" />
-            <img src="src\assets\rectangle-2818.png" alt="Image 2" className="image-item" />
-            <img src="src\assets\rectangle-2819.png" alt="Image 3" className="image-item" />
-            <img src="src\assets\rectangle-2817.png" alt="Image 4" className="image-item" />
+            <img src={about_1} alt="Image 1" className="image-item" />
+            <img src={about_2} alt="Image 2" className="image-item" />
+            <img src={about_3} alt="Image 3" className="image-item" />
+            <img src={about_4} alt="Image 4" className="image-item" />
           </div>
         </div>
         <div className="text-section">
@@ -37,7 +40,7 @@ const AboutUs = () => {
           )}
           
           <div className="founder-section">
-            <img src="src\assets\ellipse-1166.png" alt="Founder" className="founder-image" />
+            <img src={about_5} alt="Founder" className="founder-image" />
             <div className="founder-text">
               <h2>Vineet Gupta</h2>
               <p>Founder</p>

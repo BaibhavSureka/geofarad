@@ -1,4 +1,8 @@
 import React from 'react';
+import foot1 from "../assets/instagram-2-2.png";
+import foot2 from "../assets/facebook-2-2.png";
+import foot3 from "../assets/linkedin-1-2-2.png";
+import foot4 from "../assets/logo-stacked-1.png"
 
 const Footer = () => {
   return (
@@ -6,16 +10,16 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row justify-between lg:justify-start lg:space-x-24">
         
         <div className="flex flex-col items-center lg:items-start lg:mr-24 mb-12 lg:mb-0">
-          <img src="src\assets\logo-stacked-1.png" alt="Logo" className="mb-8" />
+          <img src={foot4} alt="Logo" className="mb-8" />
           <div className="flex space-x-6 ml-[3rem]">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="src\assets\facebook-2-2.png" alt="Facebook" className="w-6 h-6" />
+              <img src={foot2} alt="Facebook" className="w-6 h-6" />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="src\assets\instagram-2-2.png" alt="Instagram" className="w-6 h-6" />
+              <img src={foot1} alt="Instagram" className="w-6 h-6" />
             </a>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <img src="src\assets\linkedin-1-2-2.png" alt="LinkedIn" className="w-7 h-7" />
+              <img src={foot3} alt="LinkedIn" className="w-7 h-7" />
             </a>
           </div>
         </div>
