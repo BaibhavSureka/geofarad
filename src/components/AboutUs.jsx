@@ -16,10 +16,10 @@ const AboutUs = () => {
       <div className="about-section">
         <div className="images-section">
           <div className="image-grid">
-            <img src="./assets/rectangle-2928-2.svg" alt="Image 1" className="image-item" />
-            <img src="./assets/rectangle-2818.svg" alt="Image 2" className="image-item" />
-            <img src="./assets/rectangle-2819.svg" alt="Image 3" className="image-item" />
-            <img src="./assets/rectangle-2817.svg" alt="Image 4" className="image-item" />
+            <img src="./assets/rectangle-2928-2.png" alt="Image 1" className="image-item" />
+            <img src="./assets/rectangle-2818.png" alt="Image 2" className="image-item" />
+            <img src="./assets/rectangle-2819.png" alt="Image 3" className="image-item" />
+            <img src="./assets/rectangle-2817.png" alt="Image 4" className="image-item" />
           </div>
         </div>
         <div className="text-section">
@@ -37,7 +37,7 @@ const AboutUs = () => {
           )}
           
           <div className="founder-section">
-            <img src="./assets/ellipse-1166.svg" alt="Founder" className="founder-image" />
+            <img src="./assets/ellipse-1166.png" alt="Founder" className="founder-image" />
             <div className="founder-text">
               <h2>Vineet Gupta</h2>
               <p>Founder</p>

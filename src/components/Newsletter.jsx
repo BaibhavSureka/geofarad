@@ -1,9 +1,11 @@
 import React from 'react';
 import Form from './Form';
+import OurBrands from './OurBrands';
 
 const Newsletter = () => {
   return (
     <>
+      <OurBrands />
       <Form />
       <div className="relative bg-red-500 text-white py-12 text-center w-full overflow-hidden"> 
         <img 
