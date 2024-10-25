@@ -1,6 +1,7 @@
 .products {
   background: url(../assets/red_bg.png) center/cover no-repeat;
   min-height: 100vh;
+  padding-bottom: 30px;
 }
 .flex-page {
   display: flex;
